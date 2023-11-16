@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="psl" xmi:id="_UZU08IR_Ee6mQtrdkt6ZTA" title="ACME">
+  <tasks xmi:id="_UZU08YR_Ee6mQtrdkt6ZTA" title="Analysis" start="1" duration="3">
+    <effort xmi:id="_UZU08oR_Ee6mQtrdkt6ZTA" person="_UZU0-IR_Ee6mQtrdkt6ZTA"/>
+    <deliverables title="Interim Report" due="6"/>
+  </tasks>
+  <tasks xmi:id="_UZU084R_Ee6mQtrdkt6ZTA" title="Design" start="4" duration="6" dependencies="_UZU08YR_Ee6mQtrdkt6ZTA">
+    <effort xmi:id="_UZU09IR_Ee6mQtrdkt6ZTA" person="_UZU0-YR_Ee6mQtrdkt6ZTA"/>
+  </tasks>
+  <tasks xmi:id="_UZU09YR_Ee6mQtrdkt6ZTA" title="Implementation" start="7" duration="3" dependencies="_UZU084R_Ee6mQtrdkt6ZTA">
+    <effort xmi:id="_UZU09oR_Ee6mQtrdkt6ZTA" person="_UZU0-YR_Ee6mQtrdkt6ZTA" percentage="50"/>
+    <effort xmi:id="_UZU094R_Ee6mQtrdkt6ZTA" person="_UZU0-IR_Ee6mQtrdkt6ZTA" percentage="50"/>
+  </tasks>
+  <people xmi:id="_UZU0-IR_Ee6mQtrdkt6ZTA" name="Alice"/>
+  <people xmi:id="_UZU0-YR_Ee6mQtrdkt6ZTA" name="Bob"/>
+</Project>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated psl -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="psl.presentation.PslModelWizardID"
+            name="%_UI_PslModelWizard_label"
+            class="psl.presentation.PslModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/PslModelFile.gif">
+         <description>%_UI_PslModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated psl -->
+      <editor
+            id="psl.presentation.PslEditorID"
+            name="%_UI_PslEditor_label"
+            icon="icons/full/obj16/PslModelFile.gif"
+            extensions="psl"
+            class="psl.presentation.PslEditor"
+            contributorClass="psl.presentation.PslActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
