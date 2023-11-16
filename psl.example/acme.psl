@@ -2,6 +2,7 @@
 <Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="psl" xmi:id="_UZU08IR_Ee6mQtrdkt6ZTA" title="ACME">
   <tasks xmi:id="_UZU08YR_Ee6mQtrdkt6ZTA" title="Analysis" start="1" duration="3">
     <effort xmi:id="_UZU08oR_Ee6mQtrdkt6ZTA" person="_UZU0-IR_Ee6mQtrdkt6ZTA"/>
+    <effort person="_UZU0-YR_Ee6mQtrdkt6ZTA" percentage="30"/>
     <deliverables title="Interim Report" due="6"/>
   </tasks>
   <tasks xmi:id="_UZU084R_Ee6mQtrdkt6ZTA" title="Design" start="4" duration="6" dependencies="_UZU08YR_Ee6mQtrdkt6ZTA">

@@ -4,21 +4,6 @@
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="pslDiagram" label="PSL Diagram" domainClass="psl::Project" enablePopupBars="true">
       <metamodel href="psl#/"/>
       <defaultLayer name="Default">
-        <nodeMappings name="personNode" label="Person Node" semanticCandidatesExpression="feature:people" domainClass="psl::Person">
-          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" sizeComputationExpression="10" labelPosition="node" resizeKind="NSEW">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
-          </style>
-        </nodeMappings>
-        <edgeMappings name="effortEdge" label="Effort Edge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='pslDiagram']/@defaultLayer/@nodeMappings[name='personNode']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='pslDiagram']/@defaultLayer/@containerMappings[name='taskContainer']" targetFinderExpression="aql:self.eContainer()" sourceFinderExpression="feature:person" domainClass="psl::Effort" useDomainElement="true">
-          <style sizeComputationExpression="2">
-            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="aql:self.percentage + '%'">
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            </centerLabelStyleDescription>
-          </style>
-        </edgeMappings>
         <edgeMappings name="dependencyEdge" label="Dependency Edge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='pslDiagram']/@defaultLayer/@containerMappings[name='taskContainer']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='pslDiagram']/@defaultLayer/@containerMappings[name='taskContainer']" targetFinderExpression="feature:dependencies">
           <style lineStyle="dash" sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
@@ -43,13 +28,6 @@
           </style>
         </containerMappings>
         <toolSections name="nodesSection" label="Nodes">
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="personCreationTool" label="Person" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='pslDiagram']/@defaultLayer/@nodeMappings[name='personNode']">
-            <variable name="container"/>
-            <viewVariable name="containerView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="psl::Person" referenceName="people"/>
-            </initialOperation>
-          </ownedTools>
           <ownedTools xsi:type="tool:NodeCreationDescription" name="deliverableCreationTool" label="Deliverable" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='pslDiagram']/@defaultLayer/@containerMappings[name='taskContainer']/@subNodeMappings[name='deliverableNode']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
@@ -57,8 +35,57 @@
               <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="psl::Deliverable" referenceName="deliverables"/>
             </initialOperation>
           </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="taskCreationTool" label="Task" containerMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='pslDiagram']/@defaultLayer/@containerMappings[name='taskContainer']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="psl::Task" referenceName="tasks"/>
+            </initialOperation>
+          </ownedTools>
         </toolSections>
+        <toolSections name="edgesSection" label="Edges"/>
       </defaultLayer>
+      <additionalLayers name="peopleLayer" label="People" activeByDefault="true">
+        <nodeMappings name="personNode" label="Person Node" semanticCandidatesExpression="feature:people" domainClass="psl::Person">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" sizeComputationExpression="10" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="effortEdge" label="Effort Edge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='pslDiagram']/@additionalLayers[name='peopleLayer']/@nodeMappings[name='personNode']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='pslDiagram']/@defaultLayer/@containerMappings[name='taskContainer']" targetFinderExpression="aql:self.eContainer()" sourceFinderExpression="feature:person" domainClass="psl::Effort" useDomainElement="true">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="aql:self.percentage + '%'">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections name="peopleNodesSection" label="Nodes">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="personCreationTool" label="Person" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='pslDiagram']/@additionalLayers[name='peopleLayer']/@nodeMappings[name='personNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="psl::Person" referenceName="people"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="peopleEdgesSection" label="Edges">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="effortCreationTool" label="Effort" edgeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='pslDiagram']/@additionalLayers[name='peopleLayer']/@edgeMappings[name='effortEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:target">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="psl::Effort" referenceName="effort">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="person" valueExpression="var:source"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </additionalLayers>
     </ownedRepresentations>
     <ownedJavaExtensions qualifiedClassName="psl.design.Services"/>
   </ownedViewpoints>
