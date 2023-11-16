@@ -176,7 +176,7 @@ public interface PslPackage extends EPackage {
 	int TASK__DEPENDENCIES = 4;
 
 	/**
-	 * The feature id for the '<em><b>Deliverables</b></em>' containment reference.
+	 * The feature id for the '<em><b>Deliverables</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -453,10 +453,10 @@ public interface PslPackage extends EPackage {
 	EReference getTask_Dependencies();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link psl.Task#getDeliverables <em>Deliverables</em>}'.
+	 * Returns the meta object for the containment reference list '{@link psl.Task#getDeliverables <em>Deliverables</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Deliverables</em>'.
+	 * @return the meta object for the containment reference list '<em>Deliverables</em>'.
 	 * @see psl.Task#getDeliverables()
 	 * @see #getTask()
 	 * @generated
@@ -664,7 +664,7 @@ public interface PslPackage extends EPackage {
 		EReference TASK__DEPENDENCIES = eINSTANCE.getTask_Dependencies();
 
 		/**
-		 * The meta object literal for the '<em><b>Deliverables</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Deliverables</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated

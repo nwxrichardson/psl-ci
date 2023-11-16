@@ -120,25 +120,15 @@ public interface Task extends EObject {
 	EList<Task> getDependencies();
 
 	/**
-	 * Returns the value of the '<em><b>Deliverables</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Deliverables</b></em>' containment reference list.
+	 * The list contents are of type {@link psl.Deliverable}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Deliverables</em>' containment reference.
-	 * @see #setDeliverables(Deliverable)
+	 * @return the value of the '<em>Deliverables</em>' containment reference list.
 	 * @see psl.PslPackage#getTask_Deliverables()
 	 * @model containment="true"
 	 * @generated
 	 */
-	Deliverable getDeliverables();
-
-	/**
-	 * Sets the value of the '{@link psl.Task#getDeliverables <em>Deliverables</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Deliverables</em>' containment reference.
-	 * @see #getDeliverables()
-	 * @generated
-	 */
-	void setDeliverables(Deliverable value);
+	EList<Deliverable> getDeliverables();
 
 } // Task

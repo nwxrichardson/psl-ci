@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" name="psl" version="12.0.0.2017041100">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="psl" version="12.0.0.2017041100">
   <ownedViewpoints name="MyViewpoint">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="pslDiagram" label="PSL Diagram" domainClass="psl::Project" enablePopupBars="true">
       <metamodel href="psl#/"/>
@@ -42,6 +42,22 @@
             <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
           </style>
         </containerMappings>
+        <toolSections name="nodesSection" label="Nodes">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="personCreationTool" label="Person" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='pslDiagram']/@defaultLayer/@nodeMappings[name='personNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="psl::Person" referenceName="people"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="deliverableCreationTool" label="Deliverable" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='pslDiagram']/@defaultLayer/@containerMappings[name='taskContainer']/@subNodeMappings[name='deliverableNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="psl::Deliverable" referenceName="deliverables"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
       </defaultLayer>
     </ownedRepresentations>
     <ownedJavaExtensions qualifiedClassName="psl.design.Services"/>

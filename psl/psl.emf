@@ -16,7 +16,7 @@ class Task {
 	@diagram(direction="right")
 	val Effort[*] effort;
 	ref Task[*] dependencies;
-	val Deliverable deliverables;
+	val Deliverable[*] deliverables;
 }
 
 class Person {

@@ -124,14 +124,14 @@ public class TaskImpl extends MinimalEObjectImpl.Container implements Task {
 	protected EList<Task> dependencies;
 
 	/**
-	 * The cached value of the '{@link #getDeliverables() <em>Deliverables</em>}' containment reference.
+	 * The cached value of the '{@link #getDeliverables() <em>Deliverables</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getDeliverables()
 	 * @generated
 	 * @ordered
 	 */
-	protected Deliverable deliverables;
+	protected EList<Deliverable> deliverables;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -244,42 +244,11 @@ public class TaskImpl extends MinimalEObjectImpl.Container implements Task {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Deliverable getDeliverables() {
+	public EList<Deliverable> getDeliverables() {
+		if (deliverables == null) {
+			deliverables = new EObjectContainmentEList<Deliverable>(Deliverable.class, this, PslPackage.TASK__DELIVERABLES);
+		}
 		return deliverables;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetDeliverables(Deliverable newDeliverables, NotificationChain msgs) {
-		Deliverable oldDeliverables = deliverables;
-		deliverables = newDeliverables;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, PslPackage.TASK__DELIVERABLES, oldDeliverables, newDeliverables);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setDeliverables(Deliverable newDeliverables) {
-		if (newDeliverables != deliverables) {
-			NotificationChain msgs = null;
-			if (deliverables != null)
-				msgs = ((InternalEObject)deliverables).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - PslPackage.TASK__DELIVERABLES, null, msgs);
-			if (newDeliverables != null)
-				msgs = ((InternalEObject)newDeliverables).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - PslPackage.TASK__DELIVERABLES, null, msgs);
-			msgs = basicSetDeliverables(newDeliverables, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, PslPackage.TASK__DELIVERABLES, newDeliverables, newDeliverables));
 	}
 
 	/**
@@ -293,7 +262,7 @@ public class TaskImpl extends MinimalEObjectImpl.Container implements Task {
 			case PslPackage.TASK__EFFORT:
 				return ((InternalEList<?>)getEffort()).basicRemove(otherEnd, msgs);
 			case PslPackage.TASK__DELIVERABLES:
-				return basicSetDeliverables(null, msgs);
+				return ((InternalEList<?>)getDeliverables()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -349,7 +318,8 @@ public class TaskImpl extends MinimalEObjectImpl.Container implements Task {
 				getDependencies().addAll((Collection<? extends Task>)newValue);
 				return;
 			case PslPackage.TASK__DELIVERABLES:
-				setDeliverables((Deliverable)newValue);
+				getDeliverables().clear();
+				getDeliverables().addAll((Collection<? extends Deliverable>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -379,7 +349,7 @@ public class TaskImpl extends MinimalEObjectImpl.Container implements Task {
 				getDependencies().clear();
 				return;
 			case PslPackage.TASK__DELIVERABLES:
-				setDeliverables((Deliverable)null);
+				getDeliverables().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -404,7 +374,7 @@ public class TaskImpl extends MinimalEObjectImpl.Container implements Task {
 			case PslPackage.TASK__DEPENDENCIES:
 				return dependencies != null && !dependencies.isEmpty();
 			case PslPackage.TASK__DELIVERABLES:
-				return deliverables != null;
+				return deliverables != null && !deliverables.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

@@ -10,6 +10,7 @@
   <tasks xmi:id="_UZU09YR_Ee6mQtrdkt6ZTA" title="Implementation" start="7" duration="3" dependencies="_UZU084R_Ee6mQtrdkt6ZTA">
     <effort xmi:id="_UZU09oR_Ee6mQtrdkt6ZTA" person="_UZU0-YR_Ee6mQtrdkt6ZTA" percentage="50"/>
     <effort xmi:id="_UZU094R_Ee6mQtrdkt6ZTA" person="_UZU0-IR_Ee6mQtrdkt6ZTA" percentage="50"/>
+    <deliverables title="Final Report" due="36"/>
   </tasks>
   <people xmi:id="_UZU0-IR_Ee6mQtrdkt6ZTA" name="Alice"/>
   <people xmi:id="_UZU0-YR_Ee6mQtrdkt6ZTA" name="Bob"/>

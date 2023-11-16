@@ -25,8 +25,8 @@
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="dependencies" upperBound="-1"
         eType="#//Task"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="deliverables" eType="#//Deliverable"
-        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="deliverables" upperBound="-1"
+        eType="#//Deliverable" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Person">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
