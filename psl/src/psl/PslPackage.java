@@ -315,13 +315,22 @@ public interface PslPackage extends EPackage {
 	int DELIVERABLE__DUE = 1;
 
 	/**
+	 * The feature id for the '<em><b>Lead</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DELIVERABLE__LEAD = 2;
+
+	/**
 	 * The number of structural features of the '<em>Deliverable</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERABLE_FEATURE_COUNT = 2;
+	int DELIVERABLE_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Deliverable</em>' class.
@@ -549,6 +558,17 @@ public interface PslPackage extends EPackage {
 	EAttribute getDeliverable_Due();
 
 	/**
+	 * Returns the meta object for the reference '{@link psl.Deliverable#getLead <em>Lead</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Lead</em>'.
+	 * @see psl.Deliverable#getLead()
+	 * @see #getDeliverable()
+	 * @generated
+	 */
+	EReference getDeliverable_Lead();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -740,6 +760,14 @@ public interface PslPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute DELIVERABLE__DUE = eINSTANCE.getDeliverable_Due();
+
+		/**
+		 * The meta object literal for the '<em><b>Lead</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DELIVERABLE__LEAD = eINSTANCE.getDeliverable_Lead();
 
 	}
 

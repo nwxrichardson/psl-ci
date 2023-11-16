@@ -90,7 +90,6 @@ public interface Project extends EObject {
 	 * @return the value of the '<em>People</em>' containment reference list.
 	 * @see psl.PslPackage#getProject_People()
 	 * @model containment="true"
-	 *        annotation="diagram direction='right'"
 	 * @generated
 	 */
 	EList<Person> getPeople();

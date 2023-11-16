@@ -62,6 +62,7 @@ public class DeliverableItemProvider
 
 			addTitlePropertyDescriptor(object);
 			addDuePropertyDescriptor(object);
+			addLeadPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -106,6 +107,28 @@ public class DeliverableItemProvider
 				 false,
 				 false,
 				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Lead feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addLeadPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Deliverable_lead_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Deliverable_lead_feature", "_UI_Deliverable_type"),
+				 PslPackage.Literals.DELIVERABLE__LEAD,
+				 true,
+				 false,
+				 true,
+				 null,
 				 null,
 				 null));
 	}

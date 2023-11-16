@@ -15,6 +15,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link psl.Deliverable#getTitle <em>Title</em>}</li>
  *   <li>{@link psl.Deliverable#getDue <em>Due</em>}</li>
+ *   <li>{@link psl.Deliverable#getLead <em>Lead</em>}</li>
  * </ul>
  *
  * @see psl.PslPackage#getDeliverable()
@@ -65,5 +66,27 @@ public interface Deliverable extends EObject {
 	 * @generated
 	 */
 	void setDue(int value);
+
+	/**
+	 * Returns the value of the '<em><b>Lead</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Lead</em>' reference.
+	 * @see #setLead(Person)
+	 * @see psl.PslPackage#getDeliverable_Lead()
+	 * @model
+	 * @generated
+	 */
+	Person getLead();
+
+	/**
+	 * Sets the value of the '{@link psl.Deliverable#getLead <em>Lead</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Lead</em>' reference.
+	 * @see #getLead()
+	 * @generated
+	 */
+	void setLead(Person value);
 
 } // Deliverable

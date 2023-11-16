@@ -6,10 +6,12 @@ import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import psl.Deliverable;
+import psl.Person;
 import psl.PslPackage;
 
 /**
@@ -22,6 +24,7 @@ import psl.PslPackage;
  * <ul>
  *   <li>{@link psl.impl.DeliverableImpl#getTitle <em>Title</em>}</li>
  *   <li>{@link psl.impl.DeliverableImpl#getDue <em>Due</em>}</li>
+ *   <li>{@link psl.impl.DeliverableImpl#getLead <em>Lead</em>}</li>
  * </ul>
  *
  * @generated
@@ -66,6 +69,16 @@ public class DeliverableImpl extends MinimalEObjectImpl.Container implements Del
 	 * @ordered
 	 */
 	protected int due = DUE_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getLead() <em>Lead</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getLead()
+	 * @generated
+	 * @ordered
+	 */
+	protected Person lead;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -133,6 +146,44 @@ public class DeliverableImpl extends MinimalEObjectImpl.Container implements Del
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public Person getLead() {
+		if (lead != null && lead.eIsProxy()) {
+			InternalEObject oldLead = (InternalEObject)lead;
+			lead = (Person)eResolveProxy(oldLead);
+			if (lead != oldLead) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, PslPackage.DELIVERABLE__LEAD, oldLead, lead));
+			}
+		}
+		return lead;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Person basicGetLead() {
+		return lead;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setLead(Person newLead) {
+		Person oldLead = lead;
+		lead = newLead;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, PslPackage.DELIVERABLE__LEAD, oldLead, lead));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -140,6 +191,9 @@ public class DeliverableImpl extends MinimalEObjectImpl.Container implements Del
 				return getTitle();
 			case PslPackage.DELIVERABLE__DUE:
 				return getDue();
+			case PslPackage.DELIVERABLE__LEAD:
+				if (resolve) return getLead();
+				return basicGetLead();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -157,6 +211,9 @@ public class DeliverableImpl extends MinimalEObjectImpl.Container implements Del
 				return;
 			case PslPackage.DELIVERABLE__DUE:
 				setDue((Integer)newValue);
+				return;
+			case PslPackage.DELIVERABLE__LEAD:
+				setLead((Person)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -176,6 +233,9 @@ public class DeliverableImpl extends MinimalEObjectImpl.Container implements Del
 			case PslPackage.DELIVERABLE__DUE:
 				setDue(DUE_EDEFAULT);
 				return;
+			case PslPackage.DELIVERABLE__LEAD:
+				setLead((Person)null);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -192,6 +252,8 @@ public class DeliverableImpl extends MinimalEObjectImpl.Container implements Del
 				return TITLE_EDEFAULT == null ? title != null : !TITLE_EDEFAULT.equals(title);
 			case PslPackage.DELIVERABLE__DUE:
 				return due != DUE_EDEFAULT;
+			case PslPackage.DELIVERABLE__LEAD:
+				return lead != null;
 		}
 		return super.eIsSet(featureID);
 	}

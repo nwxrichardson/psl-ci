@@ -102,7 +102,6 @@ public interface Task extends EObject {
 	 * @return the value of the '<em>Effort</em>' containment reference list.
 	 * @see psl.PslPackage#getTask_Effort()
 	 * @model containment="true"
-	 *        annotation="diagram direction='right'"
 	 * @generated
 	 */
 	EList<Effort> getEffort();

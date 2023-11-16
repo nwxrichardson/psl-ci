@@ -305,6 +305,15 @@ public class PslPackageImpl extends EPackageImpl implements PslPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getDeliverable_Lead() {
+		return (EReference)deliverableEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public PslFactory getPslFactory() {
 		return (PslFactory)getEFactoryInstance();
 	}
@@ -352,6 +361,7 @@ public class PslPackageImpl extends EPackageImpl implements PslPackage {
 		deliverableEClass = createEClass(DELIVERABLE);
 		createEAttribute(deliverableEClass, DELIVERABLE__TITLE);
 		createEAttribute(deliverableEClass, DELIVERABLE__DUE);
+		createEReference(deliverableEClass, DELIVERABLE__LEAD);
 	}
 
 	/**
@@ -408,41 +418,10 @@ public class PslPackageImpl extends EPackageImpl implements PslPackage {
 		initEClass(deliverableEClass, Deliverable.class, "Deliverable", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDeliverable_Title(), ecorePackage.getEString(), "title", null, 0, 1, Deliverable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDeliverable_Due(), ecorePackage.getEInt(), "due", null, 0, 1, Deliverable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDeliverable_Lead(), this.getPerson(), null, "lead", null, 0, 1, Deliverable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);
-
-		// Create annotations
-		// diagram
-		createDiagramAnnotations();
-	}
-
-	/**
-	 * Initializes the annotations for <b>diagram</b>.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void createDiagramAnnotations() {
-		String source = "diagram";
-		addAnnotation
-		  (getProject_People(),
-		   source,
-		   new String[] {
-			   "direction", "right"
-		   });
-		addAnnotation
-		  (getTask_Effort(),
-		   source,
-		   new String[] {
-			   "direction", "right"
-		   });
-		addAnnotation
-		  (getEffort_Person(),
-		   source,
-		   new String[] {
-			   "direction", "up"
-		   });
 	}
 
 } //PslPackageImpl

@@ -29,7 +29,7 @@ public interface Effort extends EObject {
 	 * @return the value of the '<em>Person</em>' reference.
 	 * @see #setPerson(Person)
 	 * @see psl.PslPackage#getEffort_Person()
-	 * @model annotation="diagram direction='up'"
+	 * @model
 	 * @generated
 	 */
 	Person getPerson();

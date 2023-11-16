@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="psl" version="12.0.0.2017041100">
   <ownedViewpoints name="MyViewpoint">
-    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="pslDiagram" label="PSL Diagram" domainClass="psl::Project" enablePopupBars="true">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="tasksDiagram" label="Tasks Diagram" domainClass="psl::Project" enablePopupBars="true">
       <metamodel href="psl#/"/>
       <defaultLayer name="Default">
-        <edgeMappings name="dependencyEdge" label="Dependency Edge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='pslDiagram']/@defaultLayer/@containerMappings[name='taskContainer']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='pslDiagram']/@defaultLayer/@containerMappings[name='taskContainer']" targetFinderExpression="feature:dependencies">
+        <edgeMappings name="dependencyEdge" label="Dependency Edge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@defaultLayer/@containerMappings[name='taskContainer']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@defaultLayer/@containerMappings[name='taskContainer']" targetFinderExpression="feature:dependencies">
           <style lineStyle="dash" sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription labelSize="12">
@@ -13,13 +13,6 @@
           </style>
         </edgeMappings>
         <containerMappings name="taskContainer" label="Task Container" semanticCandidatesExpression="feature:tasks" domainClass="psl::Task">
-          <subNodeMappings name="deliverableNode" label="Deliverable Node" semanticCandidatesExpression="feature:deliverables" domainClass="psl::Deliverable">
-            <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:title" labelPosition="node" resizeKind="NSEW">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
-            </style>
-          </subNodeMappings>
           <style xsi:type="style:FlatContainerStyleDescription" labelSize="12" showIcon="false" labelExpression="feature:title">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -28,14 +21,7 @@
           </style>
         </containerMappings>
         <toolSections name="nodesSection" label="Nodes">
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="deliverableCreationTool" label="Deliverable" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='pslDiagram']/@defaultLayer/@containerMappings[name='taskContainer']/@subNodeMappings[name='deliverableNode']">
-            <variable name="container"/>
-            <viewVariable name="containerView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="psl::Deliverable" referenceName="deliverables"/>
-            </initialOperation>
-          </ownedTools>
-          <ownedTools xsi:type="tool:ContainerCreationDescription" name="taskCreationTool" label="Task" containerMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='pslDiagram']/@defaultLayer/@containerMappings[name='taskContainer']">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="taskCreationTool" label="Task" containerMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@defaultLayer/@containerMappings[name='taskContainer']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -43,17 +29,110 @@
             </initialOperation>
           </ownedTools>
         </toolSections>
-        <toolSections name="edgesSection" label="Edges"/>
+        <toolSections name="edgesSection" label="Edges">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="tasksDiagramDependencyEdgeCreationTool" label="Dependency" edgeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@defaultLayer/@edgeMappings[name='dependencyEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:target">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="dependencies" valueExpression="var:source"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
       </defaultLayer>
-      <additionalLayers name="peopleLayer" label="People" activeByDefault="true">
-        <nodeMappings name="personNode" label="Person Node" semanticCandidatesExpression="feature:people" domainClass="psl::Person">
-          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" sizeComputationExpression="10" labelPosition="node" resizeKind="NSEW">
+      <additionalLayers name="tasksDeliverablesLayer" label="Deliverables">
+        <containerMappings xsi:type="description_1:ContainerMappingImport" name="tasksDiagramDeliverablesLayerDeliverableContainerImport" label="Task Container" importedMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@defaultLayer/@containerMappings[name='taskContainer']">
+          <subNodeMappings name="deliverableNode" label="Deliverable Node" semanticCandidatesExpression="feature:deliverables" domainClass="psl::Deliverable">
+            <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:title" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
+            </style>
+          </subNodeMappings>
+        </containerMappings>
+        <toolSections name="tasksDeliverablesNodesSection" label="Nodes">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="deliverableCreationTool" label="Deliverable" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@additionalLayers[name='tasksDeliverablesLayer']/@containerMappings[name='tasksDiagramDeliverablesLayerDeliverableContainerImport']/@subNodeMappings[name='deliverableNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="psl::Deliverable" referenceName="deliverables"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </additionalLayers>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="deliverablesDiagram" label="Deliverables Diagram" domainClass="psl::Task" enablePopupBars="true">
+      <metamodel href="psl#/"/>
+      <defaultLayer name="Default">
+        <nodeMappings name="deliverablesDeliverableNode" label="Deliverable Node" semanticCandidatesExpression="feature:deliverables" domainClass="psl::Deliverable">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:title" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
+          </style>
+        </nodeMappings>
+        <toolSections name="deliverablesNodesSection" label="Nodes">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="deliverablesDiagramDeliverableCreation" label="Deliverable" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer/@nodeMappings[name='deliverablesDeliverableNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="psl::Deliverable" referenceName="deliverables"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+      <additionalLayers name="deliverablesPeopleLayer" label="People" activeByDefault="true">
+        <nodeMappings name="personNode" label="Person Node" semanticCandidatesExpression="aql:self.effort.person" domainClass="psl::Person">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
           </style>
         </nodeMappings>
-        <edgeMappings name="effortEdge" label="Effort Edge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='pslDiagram']/@additionalLayers[name='peopleLayer']/@nodeMappings[name='personNode']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='pslDiagram']/@defaultLayer/@containerMappings[name='taskContainer']" targetFinderExpression="aql:self.eContainer()" sourceFinderExpression="feature:person" domainClass="psl::Effort" useDomainElement="true">
+        <edgeMappings name="deliverablesDiagramPeopleLayerLeadEdge" label="Lead Edge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer/@nodeMappings[name='deliverablesDeliverableNode']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@nodeMappings[name='personNode']" targetFinderExpression="feature:lead">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections name="deliverablesDiagramPeopleLayerEdgesSection" label="Edges">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="deliverablesDiagramLeadCreation" label="Lead" edgeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@edgeMappings[name='deliverablesDiagramPeopleLayerLeadEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="lead" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </additionalLayers>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="effortDiagram" label="Effort Diagram" domainClass="psl::Project" enablePopupBars="true">
+      <metamodel href="psl#/"/>
+      <defaultLayer name="Default">
+        <nodeMappings name="effortDiagramTaskNode" label="Task Node" semanticCandidatesExpression="feature:tasks" domainClass="psl::Task">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:title" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="effortDiagramPersonNode" label="Person Node" semanticCandidatesExpression="feature:people" domainClass="psl::Person">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="effortEdge" label="Effort Edge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@nodeMappings[name='effortDiagramPersonNode']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@nodeMappings[name='effortDiagramTaskNode']" targetFinderExpression="aql:self.eContainer()" sourceFinderExpression="feature:person" domainClass="psl::Effort" useDomainElement="true">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="aql:self.percentage + '%'">
@@ -61,8 +140,15 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <toolSections name="peopleNodesSection" label="Nodes">
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="personCreationTool" label="Person" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='pslDiagram']/@additionalLayers[name='peopleLayer']/@nodeMappings[name='personNode']">
+        <toolSections name="effortDiagramNodesSection" label="Nodes">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="effortDiagramTaskCreation" label="Task" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@nodeMappings[name='effortDiagramTaskNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="psl::Task" referenceName="tasks"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="effortDiagramPersonCreation" label="Person" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@nodeMappings[name='effortDiagramPersonNode']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -71,7 +157,7 @@
           </ownedTools>
         </toolSections>
         <toolSections name="peopleEdgesSection" label="Edges">
-          <ownedTools xsi:type="tool:EdgeCreationDescription" name="effortCreationTool" label="Effort" edgeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='pslDiagram']/@additionalLayers[name='peopleLayer']/@edgeMappings[name='effortEdge']">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="effortCreationTool" label="Effort" edgeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@edgeMappings[name='effortEdge']">
             <sourceVariable name="source"/>
             <targetVariable name="target"/>
             <sourceViewVariable name="sourceView"/>
@@ -85,7 +171,7 @@
             </initialOperation>
           </ownedTools>
         </toolSections>
-      </additionalLayers>
+      </defaultLayer>
     </ownedRepresentations>
     <ownedJavaExtensions qualifiedClassName="psl.design.Services"/>
   </ownedViewpoints>
