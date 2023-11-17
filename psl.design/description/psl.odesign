@@ -34,8 +34,8 @@
             <sourceViewVariable name="sourceView"/>
             <targetViewVariable name="targetView"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:target">
-                <subModelOperations xsi:type="tool_1:SetValue" featureName="dependencies" valueExpression="var:source"/>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="dependencies" valueExpression="var:target"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
@@ -44,7 +44,7 @@
       <additionalLayers name="tasksDeliverablesLayer" label="Deliverables">
         <containerMappings xsi:type="description_1:ContainerMappingImport" name="tasksDiagramDeliverablesLayerDeliverableContainerImport" label="Task Container" importedMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@defaultLayer/@containerMappings[name='taskContainer']">
           <subNodeMappings name="deliverableNode" label="Deliverable Node" semanticCandidatesExpression="feature:deliverables" domainClass="psl::Deliverable">
-            <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:title" labelPosition="node" resizeKind="NSEW" color="//@userColorsPalettes[name='Custom%20Palette']/@entries[name='Deliverable%20Colour']">
+            <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:title" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW" color="//@userColorsPalettes[name='Custom%20Palette']/@entries[name='Deliverable%20Colour']">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
