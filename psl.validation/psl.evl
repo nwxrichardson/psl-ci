@@ -1,0 +1,30 @@
+// For every task
+context Task {
+	
+	// Check that the start month of a task is positive
+	constraint StartMonthPositive {
+		check: self.start > 0
+		
+		message: "The start month of task " + self.`title` + " should be a positive number"
+	}
+	
+	// Check that the duration of a task is positive
+	constraint DurationPositive {
+		check: self.duration > 0
+		
+		message: "The duration of task " + self.`title` + " should be a positive number"
+	}
+}
+
+// For every person
+context Person {
+	
+	// Check that the person is involved in at least one task
+	critique IsInvolvedInATask {
+		check: Effort.all.
+			exists(e|e.person = self)
+
+		message: self.name + 
+			" is not involved in any tasks"
+	}
+}
