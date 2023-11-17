@@ -13,11 +13,9 @@
           </style>
         </edgeMappings>
         <containerMappings name="taskContainer" label="Task Container" semanticCandidatesExpression="feature:tasks" domainClass="psl::Task">
-          <style xsi:type="style:FlatContainerStyleDescription" labelSize="12" showIcon="false" labelExpression="feature:title">
+          <style xsi:type="style:FlatContainerStyleDescription" labelSize="12" labelExpression="feature:title" backgroundColor="//@userColorsPalettes[name='Custom%20Palette']/@entries[name='Task%20Colour']" foregroundColor="//@userColorsPalettes[name='Custom%20Palette']/@entries[name='Task%20Colour']">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
-            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
           </style>
         </containerMappings>
         <toolSections name="nodesSection" label="Nodes">
@@ -46,10 +44,9 @@
       <additionalLayers name="tasksDeliverablesLayer" label="Deliverables">
         <containerMappings xsi:type="description_1:ContainerMappingImport" name="tasksDiagramDeliverablesLayerDeliverableContainerImport" label="Task Container" importedMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@defaultLayer/@containerMappings[name='taskContainer']">
           <subNodeMappings name="deliverableNode" label="Deliverable Node" semanticCandidatesExpression="feature:deliverables" domainClass="psl::Deliverable">
-            <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:title" labelPosition="node" resizeKind="NSEW">
+            <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:title" labelPosition="node" resizeKind="NSEW" color="//@userColorsPalettes[name='Custom%20Palette']/@entries[name='Deliverable%20Colour']">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
             </style>
           </subNodeMappings>
         </containerMappings>
@@ -68,10 +65,9 @@
       <metamodel href="psl#/"/>
       <defaultLayer name="Default">
         <nodeMappings name="deliverablesDeliverableNode" label="Deliverable Node" semanticCandidatesExpression="feature:deliverables" domainClass="psl::Deliverable">
-          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:title" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:title" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW" color="//@userColorsPalettes[name='Custom%20Palette']/@entries[name='Deliverable%20Colour']">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
           </style>
         </nodeMappings>
         <toolSections name="deliverablesNodesSection" label="Nodes">
@@ -86,10 +82,9 @@
       </defaultLayer>
       <additionalLayers name="deliverablesPeopleLayer" label="People" activeByDefault="true">
         <nodeMappings name="personNode" label="Person Node" semanticCandidatesExpression="aql:self.effort.person" domainClass="psl::Person">
-          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW">
+          <style xsi:type="style:SquareDescription" labelSize="12" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW" color="//@userColorsPalettes[name='Custom%20Palette']/@entries[name='Person%20Colour']">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
           </style>
         </nodeMappings>
         <edgeMappings name="deliverablesDiagramPeopleLayerLeadEdge" label="Lead Edge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer/@nodeMappings[name='deliverablesDeliverableNode']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@nodeMappings[name='personNode']" targetFinderExpression="feature:lead">
@@ -119,17 +114,15 @@
       <metamodel href="psl#/"/>
       <defaultLayer name="Default">
         <nodeMappings name="effortDiagramTaskNode" label="Task Node" semanticCandidatesExpression="feature:tasks" domainClass="psl::Task">
-          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:title" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:title" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW" color="//@userColorsPalettes[name='Custom%20Palette']/@entries[name='Task%20Colour']">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
           </style>
         </nodeMappings>
         <nodeMappings name="effortDiagramPersonNode" label="Person Node" semanticCandidatesExpression="feature:people" domainClass="psl::Person">
-          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW">
+          <style xsi:type="style:SquareDescription" labelSize="12" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW" color="//@userColorsPalettes[name='Custom%20Palette']/@entries[name='Person%20Colour']">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
           </style>
         </nodeMappings>
         <edgeMappings name="effortEdge" label="Effort Edge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@nodeMappings[name='effortDiagramPersonNode']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@nodeMappings[name='effortDiagramTaskNode']" targetFinderExpression="aql:self.eContainer()" sourceFinderExpression="feature:person" domainClass="psl::Effort" useDomainElement="true">
@@ -175,4 +168,10 @@
     </ownedRepresentations>
     <ownedJavaExtensions qualifiedClassName="psl.design.Services"/>
   </ownedViewpoints>
+  <userColorsPalettes name="Custom Palette">
+    <entries xsi:type="description:UserFixedColor" red="181" green="254" blue="254" name="Task Colour"/>
+    <entries xsi:type="description:UserFixedColor" red="254" green="255" blue="180" name="Person Colour"/>
+    <entries xsi:type="description:UserFixedColor" red="244" green="222" blue="169" name="Effort Colour"/>
+    <entries xsi:type="description:UserFixedColor" red="201" green="230" blue="182" name="Deliverable Colour"/>
+  </userColorsPalettes>
 </description:Group>
