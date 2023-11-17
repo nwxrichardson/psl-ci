@@ -34,3 +34,7 @@ Eclipse Sirius editor for a simple [Project Scheduling Language (PSL)](psl/psl.e
 ![](screenshots/effort-diagram.png)
 
 ![](screenshots/deliverables-diagram.png)
+
+## Resources
+
+The editor's [custom icons](psl.edit/icons/full/obj16) were borrowed from the [archi](https://github.com/archimatetool/archi/tree/master/com.archimatetool.editor/img) tool.
