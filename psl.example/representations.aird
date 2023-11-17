@@ -19,7 +19,7 @@
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_MJCn4ITOEe66n7SDl9EW-w" name="Delivery Deliverables Diagram" repPath="#_MJAysITOEe66n7SDl9EW-w" changeId="e1a32256-7de4-43c0-9ed4-77afec478dd1">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_ZI7T0ITQEe6PXYtoMJHRaQ" name="Design Deliverables Diagram" repPath="#_ZI6FsITQEe6PXYtoMJHRaQ" changeId="61a85c00-5303-4103-a2d2-c66ef4d194b6">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_ZI7T0ITQEe6PXYtoMJHRaQ" name="Design Deliverables Diagram" repPath="#_ZI6FsITQEe6PXYtoMJHRaQ" changeId="62cc093f-5279-4977-82e3-28b61b1fc839">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']"/>
         <target xmi:type="Task" href="acme.psl#_UZU084R_Ee6mQtrdkt6ZTA"/>
       </ownedRepresentationDescriptors>
@@ -540,7 +540,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZJJWQoTQEe6PXYtoMJHRaQ"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_ZJFr4YTQEe6PXYtoMJHRaQ" fontName=".AppleSystemUIFont" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZJFr4oTQEe6PXYtoMJHRaQ" x="328" y="89" width="50" height="50"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZJFr4oTQEe6PXYtoMJHRaQ" x="328" y="89" width="68" height="50"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_ZJIIIITQEe6PXYtoMJHRaQ" type="2001" element="_ZJD2sITQEe6PXYtoMJHRaQ">
           <children xmi:type="notation:Node" xmi:id="_ZJIII4TQEe6PXYtoMJHRaQ" type="5002">
@@ -579,7 +579,7 @@
           <styles xmi:type="notation:FontStyle" xmi:id="_b-EU-ITQEe6PXYtoMJHRaQ" fontName=".AppleSystemUIFont" fontHeight="12"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_b-EU-YTQEe6PXYtoMJHRaQ" points="[133, 20, -189, -29]$[322, 49, 0, 0]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_b-E8BoTQEe6PXYtoMJHRaQ" id="(0.0,0.5)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_b-E8B4TQEe6PXYtoMJHRaQ" id="(1.0,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_b-E8B4TQEe6PXYtoMJHRaQ" id="(0.7352941176470589,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_cg58QoTQEe6PXYtoMJHRaQ" type="4001" element="_cg0ctITQEe6PXYtoMJHRaQ" source="_ZJIvMITQEe6PXYtoMJHRaQ" target="_ZJFr4ITQEe6PXYtoMJHRaQ">
           <children xmi:type="notation:Node" xmi:id="_cg6jUITQEe6PXYtoMJHRaQ" type="6001">
@@ -595,7 +595,7 @@
           <styles xmi:type="notation:FontStyle" xmi:id="_cg58RITQEe6PXYtoMJHRaQ" fontName=".AppleSystemUIFont" fontHeight="12"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cg58RYTQEe6PXYtoMJHRaQ" points="[67, -16, -189, 44]$[206, -49, -50, 11]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eaTG0ITQEe6PXYtoMJHRaQ" id="(0.5,0.5)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cg6jV4TQEe6PXYtoMJHRaQ" id="(1.0,0.56)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cg6jV4TQEe6PXYtoMJHRaQ" id="(0.7352941176470589,0.56)"/>
         </edges>
       </data>
     </ownedAnnotationEntries>
