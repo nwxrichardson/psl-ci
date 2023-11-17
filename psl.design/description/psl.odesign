@@ -87,7 +87,7 @@
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
         </nodeMappings>
-        <edgeMappings name="deliverablesDiagramPeopleLayerLeadEdge" label="Lead Edge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer/@nodeMappings[name='deliverablesDeliverableNode']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@nodeMappings[name='personNode']" targetFinderExpression="feature:lead">
+        <edgeMappings name="deliverablesDiagramPeopleLayerLeadEdge" label="Lead Edge" deletionDescription="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@toolSections.0/@ownedTools[name='deliverablesDiagramLeadUnsetting']" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer/@nodeMappings[name='deliverablesDeliverableNode']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@nodeMappings[name='personNode']" targetFinderExpression="feature:lead">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription labelSize="12">
@@ -104,6 +104,16 @@
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
                 <subModelOperations xsi:type="tool_1:SetValue" featureName="lead" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="deliverablesDiagramLeadUnsetting" label="Lead">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:Unset" featureName="lead"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
