@@ -3,6 +3,7 @@ context Task {
 	
 	// Check that the start month of a task is positive
 	constraint StartMonthPositive {
+		
 		check: self.start > 0
 		
 		message: "The start month of task " + self.`title` + " should be a positive number"
@@ -10,6 +11,7 @@ context Task {
 	
 	// Check that the duration of a task is positive
 	constraint DurationPositive {
+		
 		check: self.duration > 0
 		
 		message: "The duration of task " + self.`title` + " should be a positive number"
@@ -21,10 +23,31 @@ context Person {
 	
 	// Check that the person is involved in at least one task
 	critique IsInvolvedInATask {
+		
 		check: Effort.all.
 			exists(e|e.person = self)
 
 		message: self.name + 
 			" is not involved in any tasks"
+	}
+}
+
+// For every effort
+context Effort {
+	
+	// Check that the percentage is not more than 100%
+	constraint PercentageLessThan100 {
+		
+		check: self.percentage <= 100
+		
+		message: "Percentage must be <= 100%"
+		
+		fix {
+			title: "Change to 100%"
+			
+			do {
+				self.percentage = 100;
+			}
+		}
 	}
 }
