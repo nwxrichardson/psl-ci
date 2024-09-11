@@ -2,7 +2,7 @@
 <description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="psl" version="12.0.0.2017041100">
   <ownedViewpoints name="MyViewpoint">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="tasksDiagram" label="Tasks Diagram" domainClass="psl::Project" enablePopupBars="true">
-      <metamodel href="psl#/"/>
+      <metamodel href="../../psl/psl.ecore#/"/>
       <defaultLayer name="Default">
         <edgeMappings name="dependencyEdge" label="Dependency Edge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@defaultLayer/@containerMappings[name='taskContainer']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@defaultLayer/@containerMappings[name='taskContainer']" targetFinderExpression="feature:dependencies">
           <style lineStyle="dash" sizeComputationExpression="2">
@@ -62,7 +62,7 @@
       </additionalLayers>
     </ownedRepresentations>
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="deliverablesDiagram" label="Deliverables Diagram" domainClass="psl::Task" enablePopupBars="true">
-      <metamodel href="psl#/"/>
+      <metamodel href="../../psl/psl.ecore#/"/>
       <defaultLayer name="Default">
         <nodeMappings name="deliverablesDeliverableNode" label="Deliverable Node" semanticCandidatesExpression="feature:deliverables" domainClass="psl::Deliverable">
           <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:title" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW" color="//@userColorsPalettes[name='Custom%20Palette']/@entries[name='Deliverable%20Colour']">
@@ -121,7 +121,7 @@
       </additionalLayers>
     </ownedRepresentations>
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="effortDiagram" label="Effort Diagram" domainClass="psl::Project" enablePopupBars="true">
-      <metamodel href="psl#/"/>
+      <metamodel href="../../psl/psl.ecore#/"/>
       <defaultLayer name="Default">
         <nodeMappings name="effortDiagramTaskNode" label="Task Node" semanticCandidatesExpression="feature:tasks" domainClass="psl::Task">
           <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:title" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW" color="//@userColorsPalettes[name='Custom%20Palette']/@entries[name='Task%20Colour']">

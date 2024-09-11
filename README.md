@@ -21,11 +21,11 @@ Eclipse Sirius editor for a simple [Project Scheduling Language (PSL)](psl/psl.e
   - `psl`
   - `psl.edit`
   - `psl.editor`
+  - `psl.design`
   - `psl.tests`
   - `psl.validation`
 - Right-click on the `psl` project and select `Run As -> Eclipse Application`
-- In the new Eclipse instance, import the following projects from this repository
-  - `psl.design`
+- In the new Eclipse instance, import the following project from this repository
   - `psl.example`
 - Switch to the `Modeling` perspective
 - Explore the diagrams within `acme.psl`

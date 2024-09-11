@@ -1,30 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="psl" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
-  <viewpoint:DAnalysis uid="_QD2CcIR_Ee6mQtrdkt6ZTA" selectedViews="_hEQ2gIR_Ee6mQtrdkt6ZTA" version="14.5.1.202106111100">
+  <viewpoint:DAnalysis uid="_QD2CcIR_Ee6mQtrdkt6ZTA" selectedViews="_hEQ2gIR_Ee6mQtrdkt6ZTA" version="15.2.0.202303281325">
     <semanticResources>acme.psl</semanticResources>
+    <semanticResources>platform:/plugin/psl.design/description/psl.odesign</semanticResources>
+    <semanticResources>environment:/viewpoint</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_hEQ2gIR_Ee6mQtrdkt6ZTA">
-      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="__EWd0oSyEe6H-JWZ5GMbLQ" name="Tasks Diagram" repPath="#__EWd0ISyEe6H-JWZ5GMbLQ" changeId="08591ef2-6273-48b7-933e-c944bc4d89fa">
-        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']"/>
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="__EWd0oSyEe6H-JWZ5GMbLQ" name="Tasks Diagram" repPath="#__EWd0ISyEe6H-JWZ5GMbLQ" changeId="1726056394554">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']"/>
         <target xmi:type="Project" href="acme.psl#_UZU08IR_Ee6mQtrdkt6ZTA"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_CGx3koS0Ee6H-JWZ5GMbLQ" name="Analysis Deliverables Diagram" repPath="#_CGx3kIS0Ee6H-JWZ5GMbLQ" changeId="3a90203d-9b58-4d28-94cc-ce8f18bce8f4">
-        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_CGx3koS0Ee6H-JWZ5GMbLQ" name="Analysis Deliverables Diagram" repPath="#_CGx3kIS0Ee6H-JWZ5GMbLQ" changeId="1726056394554">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']"/>
         <target xmi:type="Task" href="acme.psl#_UZU08YR_Ee6mQtrdkt6ZTA"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_IiBAMoS1Ee6H-JWZ5GMbLQ" name="Effort Diagram" repPath="#_IiBAMIS1Ee6H-JWZ5GMbLQ" changeId="b6ed28a6-646c-4fa6-ad1a-f62ff48fc7dd">
-        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_IiBAMoS1Ee6H-JWZ5GMbLQ" name="Effort Diagram" repPath="#_IiBAMIS1Ee6H-JWZ5GMbLQ" changeId="1726056394554">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']"/>
         <target xmi:type="Project" href="acme.psl#_UZU08IR_Ee6mQtrdkt6ZTA"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_MJCn4ITOEe66n7SDl9EW-w" name="Delivery Deliverables Diagram" repPath="#_MJAysITOEe66n7SDl9EW-w" changeId="e1a32256-7de4-43c0-9ed4-77afec478dd1">
-        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_MJCn4ITOEe66n7SDl9EW-w" name="Delivery Deliverables Diagram" repPath="#_MJAysITOEe66n7SDl9EW-w" changeId="1726056394554">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_ZI7T0ITQEe6PXYtoMJHRaQ" name="Design Deliverables Diagram" repPath="#_ZI6FsITQEe6PXYtoMJHRaQ" changeId="62cc093f-5279-4977-82e3-28b61b1fc839">
-        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_ZI7T0ITQEe6PXYtoMJHRaQ" name="Design Deliverables Diagram" repPath="#_ZI6FsITQEe6PXYtoMJHRaQ" changeId="1726056394554">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']"/>
         <target xmi:type="Task" href="acme.psl#_UZU084R_Ee6mQtrdkt6ZTA"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_gzGxQoTQEe6PXYtoMJHRaQ" name="Implementation Deliverables Diagram" repPath="#_gzGxQITQEe6PXYtoMJHRaQ" changeId="86d31d08-fa74-4d30-b88e-e6e735a362b8">
-        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_gzGxQoTQEe6PXYtoMJHRaQ" name="Implementation Deliverables Diagram" repPath="#_gzGxQITQEe6PXYtoMJHRaQ" changeId="1726056394554">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']"/>
         <target xmi:type="Task" href="acme.psl#_UZU09YR_Ee6mQtrdkt6ZTA"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
@@ -104,9 +106,9 @@
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="__EXr8YSyEe6H-JWZ5GMbLQ" labelSize="12" backgroundColor="181,254,254" foregroundColor="181,254,254">
-        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@defaultLayer/@containerMappings[name='taskContainer']/@style"/>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@defaultLayer/@containerMappings[name='taskContainer']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@defaultLayer/@containerMappings[name='taskContainer']"/>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@defaultLayer/@containerMappings[name='taskContainer']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="__EYTAYSyEe6H-JWZ5GMbLQ" name="Design" outgoingEdges="__EavQ4SyEe6H-JWZ5GMbLQ" incomingEdges="__EbWUoSyEe6H-JWZ5GMbLQ">
       <target xmi:type="Task" href="acme.psl#_UZU084R_Ee6mQtrdkt6ZTA"/>
@@ -115,9 +117,9 @@
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="__EYTAoSyEe6H-JWZ5GMbLQ" labelSize="12" backgroundColor="181,254,254" foregroundColor="181,254,254">
-        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@defaultLayer/@containerMappings[name='taskContainer']/@style"/>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@defaultLayer/@containerMappings[name='taskContainer']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@defaultLayer/@containerMappings[name='taskContainer']"/>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@defaultLayer/@containerMappings[name='taskContainer']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="__EY6EISyEe6H-JWZ5GMbLQ" name="Implementation" outgoingEdges="__EbWUoSyEe6H-JWZ5GMbLQ">
       <target xmi:type="Task" href="acme.psl#_UZU09YR_Ee6mQtrdkt6ZTA"/>
@@ -126,29 +128,29 @@
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="__EY6EYSyEe6H-JWZ5GMbLQ" labelSize="12" backgroundColor="181,254,254" foregroundColor="181,254,254">
-        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@defaultLayer/@containerMappings[name='taskContainer']/@style"/>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@defaultLayer/@containerMappings[name='taskContainer']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@defaultLayer/@containerMappings[name='taskContainer']"/>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@defaultLayer/@containerMappings[name='taskContainer']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="__EavQ4SyEe6H-JWZ5GMbLQ" sourceNode="__EYTAYSyEe6H-JWZ5GMbLQ" targetNode="__EXr8ISyEe6H-JWZ5GMbLQ">
       <target xmi:type="Task" href="acme.psl#_UZU084R_Ee6mQtrdkt6ZTA"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="__EavRISyEe6H-JWZ5GMbLQ" lineStyle="dash" size="2">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@defaultLayer/@edgeMappings[name='dependencyEdge']/@style"/>
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@defaultLayer/@edgeMappings[name='dependencyEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="__EavRYSyEe6H-JWZ5GMbLQ" labelSize="12"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@defaultLayer/@edgeMappings[name='dependencyEdge']"/>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@defaultLayer/@edgeMappings[name='dependencyEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="__EbWUoSyEe6H-JWZ5GMbLQ" sourceNode="__EY6EISyEe6H-JWZ5GMbLQ" targetNode="__EYTAYSyEe6H-JWZ5GMbLQ">
       <target xmi:type="Task" href="acme.psl#_UZU09YR_Ee6mQtrdkt6ZTA"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="__EbWU4SyEe6H-JWZ5GMbLQ" lineStyle="dash" size="2">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@defaultLayer/@edgeMappings[name='dependencyEdge']/@style"/>
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@defaultLayer/@edgeMappings[name='dependencyEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="__EbWVISyEe6H-JWZ5GMbLQ" labelSize="12"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@defaultLayer/@edgeMappings[name='dependencyEdge']"/>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@defaultLayer/@edgeMappings[name='dependencyEdge']"/>
     </ownedDiagramElements>
-    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']"/>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="__EWd0YSyEe6H-JWZ5GMbLQ"/>
-    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@defaultLayer"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='tasksDiagram']/@defaultLayer"/>
     <target xmi:type="Project" href="acme.psl#_UZU08IR_Ee6mQtrdkt6ZTA"/>
   </diagram:DSemanticDiagram>
   <diagram:DSemanticDiagram uid="_CGx3kIS0Ee6H-JWZ5GMbLQ">
@@ -205,9 +207,9 @@
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
       <ownedStyle xmi:type="diagram:Square" uid="_sc2k8YS3Ee6kQ_wGSGkJCw" labelSize="12" labelPosition="node" color="254,255,180">
-        <description xmi:type="style:SquareDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@nodeMappings[name='personNode']/@style"/>
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@nodeMappings[name='personNode']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@nodeMappings[name='personNode']"/>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@nodeMappings[name='personNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_UJ0c44TNEe66n7SDl9EW-w" name="Requirements" outgoingEdges="_kbAhgITPEe6PXYtoMJHRaQ" width="5" height="5" resizeKind="NSEW">
       <target xmi:type="Deliverable" href="acme.psl#//@tasks.0/@deliverables.0"/>
@@ -216,22 +218,22 @@
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
       <ownedStyle xmi:type="diagram:Square" uid="_UJ0c5ITNEe66n7SDl9EW-w" labelSize="12" labelPosition="node" color="201,230,182">
-        <description xmi:type="style:SquareDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer/@nodeMappings[name='deliverablesDeliverableNode']/@style"/>
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer/@nodeMappings[name='deliverablesDeliverableNode']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer/@nodeMappings[name='deliverablesDeliverableNode']"/>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer/@nodeMappings[name='deliverablesDeliverableNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_kbAhgITPEe6PXYtoMJHRaQ" sourceNode="_UJ0c44TNEe66n7SDl9EW-w" targetNode="_sc2k8IS3Ee6kQ_wGSGkJCw">
       <target xmi:type="Deliverable" href="acme.psl#//@tasks.0/@deliverables.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_kbAhgYTPEe6PXYtoMJHRaQ" size="2">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@edgeMappings[name='deliverablesDiagramPeopleLayerLeadEdge']/@style"/>
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@edgeMappings[name='deliverablesDiagramPeopleLayerLeadEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_kbAhgoTPEe6PXYtoMJHRaQ" labelSize="12"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@edgeMappings[name='deliverablesDiagramPeopleLayerLeadEdge']"/>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@edgeMappings[name='deliverablesDiagramPeopleLayerLeadEdge']"/>
     </ownedDiagramElements>
-    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']"/>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_CGx3kYS0Ee6H-JWZ5GMbLQ"/>
-    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer"/>
-    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer"/>
+    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']"/>
     <target xmi:type="Task" href="acme.psl#_UZU08YR_Ee6mQtrdkt6ZTA"/>
   </diagram:DSemanticDiagram>
   <diagram:DSemanticDiagram uid="_IiBAMIS1Ee6H-JWZ5GMbLQ">
@@ -369,9 +371,9 @@
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
       <ownedStyle xmi:type="diagram:Square" uid="_XNPnEITMEe66n7SDl9EW-w" labelSize="12" labelPosition="node" color="181,254,254">
-        <description xmi:type="style:SquareDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@nodeMappings[name='effortDiagramTaskNode']/@style"/>
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@nodeMappings[name='effortDiagramTaskNode']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@nodeMappings[name='effortDiagramTaskNode']"/>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@nodeMappings[name='effortDiagramTaskNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_XNQ1MYTMEe66n7SDl9EW-w" name="Design" incomingEdges="_9g6WVYTMEe66n7SDl9EW-w" width="5" height="5" resizeKind="NSEW">
       <target xmi:type="Task" href="acme.psl#_UZU084R_Ee6mQtrdkt6ZTA"/>
@@ -380,9 +382,9 @@
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
       <ownedStyle xmi:type="diagram:Square" uid="_XNQ1MoTMEe66n7SDl9EW-w" labelSize="12" labelPosition="node" color="181,254,254">
-        <description xmi:type="style:SquareDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@nodeMappings[name='effortDiagramTaskNode']/@style"/>
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@nodeMappings[name='effortDiagramTaskNode']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@nodeMappings[name='effortDiagramTaskNode']"/>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@nodeMappings[name='effortDiagramTaskNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_XNRcQYTMEe66n7SDl9EW-w" name="Implementation" incomingEdges="_9g69YoTMEe66n7SDl9EW-w _9g69Z4TMEe66n7SDl9EW-w" width="5" height="5" resizeKind="NSEW">
       <target xmi:type="Task" href="acme.psl#_UZU09YR_Ee6mQtrdkt6ZTA"/>
@@ -391,9 +393,9 @@
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
       <ownedStyle xmi:type="diagram:Square" uid="_XNRcQoTMEe66n7SDl9EW-w" labelSize="12" labelPosition="node" color="181,254,254">
-        <description xmi:type="style:SquareDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@nodeMappings[name='effortDiagramTaskNode']/@style"/>
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@nodeMappings[name='effortDiagramTaskNode']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@nodeMappings[name='effortDiagramTaskNode']"/>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@nodeMappings[name='effortDiagramTaskNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_w9QohoTMEe66n7SDl9EW-w" name="Alice" outgoingEdges="_9g5vQITMEe66n7SDl9EW-w _9g69Z4TMEe66n7SDl9EW-w" width="5" height="5" resizeKind="NSEW">
       <target xmi:type="Person" href="acme.psl#_UZU0-IR_Ee6mQtrdkt6ZTA"/>
@@ -402,9 +404,9 @@
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
       <ownedStyle xmi:type="diagram:Square" uid="_w9RPkITMEe66n7SDl9EW-w" labelSize="12" labelPosition="node" color="254,255,180">
-        <description xmi:type="style:SquareDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@nodeMappings[name='effortDiagramPersonNode']/@style"/>
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@nodeMappings[name='effortDiagramPersonNode']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@nodeMappings[name='effortDiagramPersonNode']"/>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@nodeMappings[name='effortDiagramPersonNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_w9RPkoTMEe66n7SDl9EW-w" name="Bob" outgoingEdges="_9g6WVYTMEe66n7SDl9EW-w _9g69YoTMEe66n7SDl9EW-w" width="5" height="5" resizeKind="NSEW">
       <target xmi:type="Person" href="acme.psl#_UZU0-YR_Ee6mQtrdkt6ZTA"/>
@@ -413,49 +415,49 @@
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
       <ownedStyle xmi:type="diagram:Square" uid="_w9RPk4TMEe66n7SDl9EW-w" labelSize="12" labelPosition="node" color="254,255,180">
-        <description xmi:type="style:SquareDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@nodeMappings[name='effortDiagramPersonNode']/@style"/>
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@nodeMappings[name='effortDiagramPersonNode']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@nodeMappings[name='effortDiagramPersonNode']"/>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@nodeMappings[name='effortDiagramPersonNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_9g5vQITMEe66n7SDl9EW-w" name="100%" sourceNode="_w9QohoTMEe66n7SDl9EW-w" targetNode="_XNOY8ITMEe66n7SDl9EW-w">
       <target xmi:type="Effort" href="acme.psl#_UZU08oR_Ee6mQtrdkt6ZTA"/>
       <semanticElements xmi:type="Effort" href="acme.psl#_UZU08oR_Ee6mQtrdkt6ZTA"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_9g5vQYTMEe66n7SDl9EW-w" size="2">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@edgeMappings[name='effortEdge']/@style"/>
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@edgeMappings[name='effortEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_9g5vQoTMEe66n7SDl9EW-w" labelSize="12" showIcon="false"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@edgeMappings[name='effortEdge']"/>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@edgeMappings[name='effortEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_9g6WVYTMEe66n7SDl9EW-w" name="100%" sourceNode="_w9RPkoTMEe66n7SDl9EW-w" targetNode="_XNQ1MYTMEe66n7SDl9EW-w">
       <target xmi:type="Effort" href="acme.psl#_UZU09IR_Ee6mQtrdkt6ZTA"/>
       <semanticElements xmi:type="Effort" href="acme.psl#_UZU09IR_Ee6mQtrdkt6ZTA"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_9g6WVoTMEe66n7SDl9EW-w" size="2">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@edgeMappings[name='effortEdge']/@style"/>
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@edgeMappings[name='effortEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_9g6WV4TMEe66n7SDl9EW-w" labelSize="12" showIcon="false"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@edgeMappings[name='effortEdge']"/>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@edgeMappings[name='effortEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_9g69YoTMEe66n7SDl9EW-w" name="50%" sourceNode="_w9RPkoTMEe66n7SDl9EW-w" targetNode="_XNRcQYTMEe66n7SDl9EW-w">
       <target xmi:type="Effort" href="acme.psl#_UZU09oR_Ee6mQtrdkt6ZTA"/>
       <semanticElements xmi:type="Effort" href="acme.psl#_UZU09oR_Ee6mQtrdkt6ZTA"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_9g69Y4TMEe66n7SDl9EW-w" size="2">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@edgeMappings[name='effortEdge']/@style"/>
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@edgeMappings[name='effortEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_9g69ZITMEe66n7SDl9EW-w" labelSize="12" showIcon="false"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@edgeMappings[name='effortEdge']"/>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@edgeMappings[name='effortEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_9g69Z4TMEe66n7SDl9EW-w" name="50%" sourceNode="_w9QohoTMEe66n7SDl9EW-w" targetNode="_XNRcQYTMEe66n7SDl9EW-w">
       <target xmi:type="Effort" href="acme.psl#_UZU094R_Ee6mQtrdkt6ZTA"/>
       <semanticElements xmi:type="Effort" href="acme.psl#_UZU094R_Ee6mQtrdkt6ZTA"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_9g69aITMEe66n7SDl9EW-w" size="2">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@edgeMappings[name='effortEdge']/@style"/>
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@edgeMappings[name='effortEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_9g69aYTMEe66n7SDl9EW-w" labelSize="12" showIcon="false"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@edgeMappings[name='effortEdge']"/>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer/@edgeMappings[name='effortEdge']"/>
     </ownedDiagramElements>
-    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']"/>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_IiBAMYS1Ee6H-JWZ5GMbLQ"/>
-    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='effortDiagram']/@defaultLayer"/>
     <target xmi:type="Project" href="acme.psl#_UZU08IR_Ee6mQtrdkt6ZTA"/>
   </diagram:DSemanticDiagram>
   <diagram:DSemanticDiagram uid="_MJAysITOEe66n7SDl9EW-w">
@@ -505,28 +507,28 @@
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
       <ownedStyle xmi:type="diagram:Square" uid="_MJKjsYTOEe66n7SDl9EW-w" labelSize="12" showIcon="false" labelPosition="node" color="194,239,255">
-        <description xmi:type="style:SquareDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@nodeMappings[name='personNode']/@style"/>
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@nodeMappings[name='personNode']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@nodeMappings[name='personNode']"/>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@nodeMappings[name='personNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_iNFG0oTOEe66n7SDl9EW-w" name="Alice" width="5" height="5" resizeKind="NSEW">
       <target xmi:type="Person" href="acme.psl#_UZU0-IR_Ee6mQtrdkt6ZTA"/>
       <semanticElements xmi:type="Person" href="acme.psl#_UZU0-IR_Ee6mQtrdkt6ZTA"/>
       <ownedStyle xmi:type="diagram:Square" uid="_iNFG04TOEe66n7SDl9EW-w" labelSize="12" showIcon="false" labelPosition="node" color="194,239,255">
-        <description xmi:type="style:SquareDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@nodeMappings[name='personNode']/@style"/>
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@nodeMappings[name='personNode']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@nodeMappings[name='personNode']"/>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@nodeMappings[name='personNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_cZVmkITOEe66n7SDl9EW-w" name="Manual" width="5" height="5" resizeKind="NSEW">
       <ownedStyle xmi:type="diagram:Square" uid="_cZVmkYTOEe66n7SDl9EW-w" labelSize="12" showIcon="false" labelPosition="node" color="217,196,215">
-        <description xmi:type="style:SquareDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer/@nodeMappings[name='deliverablesDeliverableNode']/@style"/>
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer/@nodeMappings[name='deliverablesDeliverableNode']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer/@nodeMappings[name='deliverablesDeliverableNode']"/>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer/@nodeMappings[name='deliverablesDeliverableNode']"/>
     </ownedDiagramElements>
-    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']"/>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_MJBZwITOEe66n7SDl9EW-w"/>
-    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer"/>
-    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer"/>
+    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']"/>
   </diagram:DSemanticDiagram>
   <diagram:DSemanticDiagram uid="_ZI6FsITQEe6PXYtoMJHRaQ">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_ZJAzYITQEe6PXYtoMJHRaQ" source="GMF_DIAGRAMS">
@@ -609,9 +611,9 @@
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
       <ownedStyle xmi:type="diagram:Square" uid="_ZJDPoITQEe6PXYtoMJHRaQ" labelSize="12" labelPosition="node" color="254,255,180">
-        <description xmi:type="style:SquareDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@nodeMappings[name='personNode']/@style"/>
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@nodeMappings[name='personNode']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@nodeMappings[name='personNode']"/>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@nodeMappings[name='personNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_ZJD2sITQEe6PXYtoMJHRaQ" name="Architecture" outgoingEdges="_b99AMITQEe6PXYtoMJHRaQ" width="5" height="5" resizeKind="NSEW">
       <target xmi:type="Deliverable" href="acme.psl#//@tasks.1/@deliverables.0"/>
@@ -620,9 +622,9 @@
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
       <ownedStyle xmi:type="diagram:Square" uid="_ZJD2sYTQEe6PXYtoMJHRaQ" labelSize="12" labelPosition="node" color="201,230,182">
-        <description xmi:type="style:SquareDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer/@nodeMappings[name='deliverablesDeliverableNode']/@style"/>
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer/@nodeMappings[name='deliverablesDeliverableNode']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer/@nodeMappings[name='deliverablesDeliverableNode']"/>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer/@nodeMappings[name='deliverablesDeliverableNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_ZJD2s4TQEe6PXYtoMJHRaQ" name="Low-Level Design" outgoingEdges="_cg0ctITQEe6PXYtoMJHRaQ" width="5" height="5" resizeKind="NSEW">
       <target xmi:type="Deliverable" href="acme.psl#//@tasks.1/@deliverables.1"/>
@@ -631,30 +633,30 @@
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
       <ownedStyle xmi:type="diagram:Square" uid="_ZJD2tITQEe6PXYtoMJHRaQ" labelSize="12" labelPosition="node" color="201,230,182">
-        <description xmi:type="style:SquareDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer/@nodeMappings[name='deliverablesDeliverableNode']/@style"/>
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer/@nodeMappings[name='deliverablesDeliverableNode']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer/@nodeMappings[name='deliverablesDeliverableNode']"/>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer/@nodeMappings[name='deliverablesDeliverableNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_b99AMITQEe6PXYtoMJHRaQ" sourceNode="_ZJD2sITQEe6PXYtoMJHRaQ" targetNode="_ZJCBgITQEe6PXYtoMJHRaQ">
       <target xmi:type="Deliverable" href="acme.psl#//@tasks.1/@deliverables.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_b99nQITQEe6PXYtoMJHRaQ" size="2">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@edgeMappings[name='deliverablesDiagramPeopleLayerLeadEdge']/@style"/>
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@edgeMappings[name='deliverablesDiagramPeopleLayerLeadEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_b99nQYTQEe6PXYtoMJHRaQ" labelSize="12"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@edgeMappings[name='deliverablesDiagramPeopleLayerLeadEdge']"/>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@edgeMappings[name='deliverablesDiagramPeopleLayerLeadEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_cg0ctITQEe6PXYtoMJHRaQ" sourceNode="_ZJD2s4TQEe6PXYtoMJHRaQ" targetNode="_ZJCBgITQEe6PXYtoMJHRaQ">
       <target xmi:type="Deliverable" href="acme.psl#//@tasks.1/@deliverables.1"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_cg0ctYTQEe6PXYtoMJHRaQ" size="2">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@edgeMappings[name='deliverablesDiagramPeopleLayerLeadEdge']/@style"/>
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@edgeMappings[name='deliverablesDiagramPeopleLayerLeadEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_cg0ctoTQEe6PXYtoMJHRaQ" labelSize="12"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@edgeMappings[name='deliverablesDiagramPeopleLayerLeadEdge']"/>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@edgeMappings[name='deliverablesDiagramPeopleLayerLeadEdge']"/>
     </ownedDiagramElements>
-    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']"/>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_ZI6swITQEe6PXYtoMJHRaQ"/>
-    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer"/>
-    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer"/>
+    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']"/>
     <target xmi:type="Task" href="acme.psl#_UZU084R_Ee6mQtrdkt6ZTA"/>
   </diagram:DSemanticDiagram>
   <diagram:DSemanticDiagram uid="_gzGxQITQEe6PXYtoMJHRaQ">
@@ -749,9 +751,9 @@
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
       <ownedStyle xmi:type="diagram:Square" uid="_gzHYUYTQEe6PXYtoMJHRaQ" labelSize="12" labelPosition="node" color="254,255,180">
-        <description xmi:type="style:SquareDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@nodeMappings[name='personNode']/@style"/>
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@nodeMappings[name='personNode']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@nodeMappings[name='personNode']"/>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@nodeMappings[name='personNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_gzH_YYTQEe6PXYtoMJHRaQ" name="Alice" incomingEdges="_nZt45ITQEe6PXYtoMJHRaQ" width="5" height="5" resizeKind="NSEW">
       <target xmi:type="Person" href="acme.psl#_UZU0-IR_Ee6mQtrdkt6ZTA"/>
@@ -760,9 +762,9 @@
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
       <ownedStyle xmi:type="diagram:Square" uid="_gzH_YoTQEe6PXYtoMJHRaQ" labelSize="12" labelPosition="node" color="254,255,180">
-        <description xmi:type="style:SquareDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@nodeMappings[name='personNode']/@style"/>
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@nodeMappings[name='personNode']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@nodeMappings[name='personNode']"/>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@nodeMappings[name='personNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_gzH_ZITQEe6PXYtoMJHRaQ" name="Tests" outgoingEdges="_nZt45ITQEe6PXYtoMJHRaQ" width="5" height="5" resizeKind="NSEW">
       <target xmi:type="Deliverable" href="acme.psl#//@tasks.2/@deliverables.0"/>
@@ -771,9 +773,9 @@
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
       <ownedStyle xmi:type="diagram:Square" uid="_gzH_ZYTQEe6PXYtoMJHRaQ" labelSize="12" labelPosition="node" color="201,230,182">
-        <description xmi:type="style:SquareDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer/@nodeMappings[name='deliverablesDeliverableNode']/@style"/>
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer/@nodeMappings[name='deliverablesDeliverableNode']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer/@nodeMappings[name='deliverablesDeliverableNode']"/>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer/@nodeMappings[name='deliverablesDeliverableNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_gzH_Z4TQEe6PXYtoMJHRaQ" name="Source Code" outgoingEdges="_lCe7wITQEe6PXYtoMJHRaQ" width="5" height="5" resizeKind="NSEW">
       <target xmi:type="Deliverable" href="acme.psl#//@tasks.2/@deliverables.1"/>
@@ -782,30 +784,30 @@
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
       <ownedStyle xmi:type="diagram:Square" uid="_gzH_aITQEe6PXYtoMJHRaQ" labelSize="12" labelPosition="node" color="201,230,182">
-        <description xmi:type="style:SquareDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer/@nodeMappings[name='deliverablesDeliverableNode']/@style"/>
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer/@nodeMappings[name='deliverablesDeliverableNode']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer/@nodeMappings[name='deliverablesDeliverableNode']"/>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer/@nodeMappings[name='deliverablesDeliverableNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_lCe7wITQEe6PXYtoMJHRaQ" sourceNode="_gzH_Z4TQEe6PXYtoMJHRaQ" targetNode="_gzHYUITQEe6PXYtoMJHRaQ">
       <target xmi:type="Deliverable" href="acme.psl#//@tasks.2/@deliverables.1"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_lCe7wYTQEe6PXYtoMJHRaQ" size="2">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@edgeMappings[name='deliverablesDiagramPeopleLayerLeadEdge']/@style"/>
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@edgeMappings[name='deliverablesDiagramPeopleLayerLeadEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_lCe7woTQEe6PXYtoMJHRaQ" labelSize="12"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@edgeMappings[name='deliverablesDiagramPeopleLayerLeadEdge']"/>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@edgeMappings[name='deliverablesDiagramPeopleLayerLeadEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_nZt45ITQEe6PXYtoMJHRaQ" sourceNode="_gzH_ZITQEe6PXYtoMJHRaQ" targetNode="_gzH_YYTQEe6PXYtoMJHRaQ">
       <target xmi:type="Deliverable" href="acme.psl#//@tasks.2/@deliverables.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_nZt45YTQEe6PXYtoMJHRaQ" size="2">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@edgeMappings[name='deliverablesDiagramPeopleLayerLeadEdge']/@style"/>
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@edgeMappings[name='deliverablesDiagramPeopleLayerLeadEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_nZt45oTQEe6PXYtoMJHRaQ" labelSize="12"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@edgeMappings[name='deliverablesDiagramPeopleLayerLeadEdge']"/>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']/@edgeMappings[name='deliverablesDiagramPeopleLayerLeadEdge']"/>
     </ownedDiagramElements>
-    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']"/>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_gzGxQYTQEe6PXYtoMJHRaQ"/>
-    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer"/>
-    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/resource/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@defaultLayer"/>
+    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/psl.design/description/psl.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='deliverablesDiagram']/@additionalLayers[name='deliverablesPeopleLayer']"/>
     <target xmi:type="Task" href="acme.psl#_UZU09YR_Ee6mQtrdkt6ZTA"/>
   </diagram:DSemanticDiagram>
 </xmi:XMI>
