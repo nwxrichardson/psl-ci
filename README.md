@@ -11,9 +11,9 @@ Eclipse Sirius editor for a simple [Project Scheduling Language (PSL)](psl/psl.e
 ## How to run
 
 - Clone this repository
-- Install [Epsilon 2.4 using the Eclipse Installer](https://eclipse.dev/epsilon/download)
-  - Prefer an embedded JRE 11/17
-- Using the `Help -> Install New Software` menu in Eclipse, install the following features from the `https://download.eclipse.org/releases/2021-12` update site
+- Install [Epsilon 2.5 using the Eclipse Installer](https://eclipse.dev/epsilon/download)
+  - Prefer an embedded JRE 17
+- Using the `Help -> Install New Software` menu in Eclipse, install the following features from the `https://download.eclipse.org/releases/2023-12` update site
   - Sirius Properties Views - Runtime Support
   - Sirius Properties Views - Specifier Support
   - Sirius Specifier Environment
@@ -32,11 +32,13 @@ Eclipse Sirius editor for a simple [Project Scheduling Language (PSL)](psl/psl.e
 
 ## Screenshots
 
-![](screenshots/tasks-diagram.png)
+![Screenshot of the tasks diagram, which does not have layers](screenshots/tasks-diagram.png)
 
-![](screenshots/effort-diagram.png)
+![Screenshot of the layered tasks diagram, which uses layers, conditional styles, and filters](screenshots/layered-tasks-diagram.png)
 
-![](screenshots/deliverables-diagram.png)
+![Screenshot of the efforts diagram](screenshots/effort-diagram.png)
+
+![Screenshot of the deliverable diagram for the "Design task"](screenshots/deliverables-diagram.png)
 
 ## Model validation
 
