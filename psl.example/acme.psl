@@ -15,7 +15,7 @@
     <deliverables title="Tests" due="12" lead="_UZU0-IR_Ee6mQtrdkt6ZTA"/>
     <deliverables title="Source Code" due="11" lead="_UZU0-YR_Ee6mQtrdkt6ZTA"/>
   </tasks>
-  <tasks title="CI"/>
+  <tasks title="CI" dependencies="_UZU09YR_Ee6mQtrdkt6ZTA"/>
   <people xmi:id="_UZU0-IR_Ee6mQtrdkt6ZTA" name="Alice"/>
   <people xmi:id="_UZU0-YR_Ee6mQtrdkt6ZTA" name="Bob"/>
 </Project>
