@@ -15,13 +15,13 @@ jobs:
           target: validate
       - name: Comment   
         id : comment
-        - uses: actions/github-script@v7
-          with:
-            github-token: ${{secrets.GITHUB_TOKEN}}
-            script: |
-              github.rest.issues.createComment({
-                issue_number: context.issue.number,
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                body: '👋 Thanks for reporting!'
-              })
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '👋 Thanks for reporting!'
+            })
