@@ -4,5 +4,6 @@
 	<target name="main" depends="comment">
 		<eclipse.refreshLocal resource="psl-ci" depth="infinite" />
 	</target>
-
+	<target name="comment">
+	</target>
 </project>
