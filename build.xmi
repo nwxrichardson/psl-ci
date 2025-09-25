@@ -1,0 +1,9 @@
+<project default="main">
+
+	<!-- CI Pipeline job entry point -->
+	<target name="main" depends="comment">
+		<eclipse.refreshLocal resource="psl-ci" depth="infinite" />
+	</target>
+	<target name="comment">
+	</target>
+</project>
