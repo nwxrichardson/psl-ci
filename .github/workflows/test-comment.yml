@@ -8,7 +8,8 @@ jobs:
   comment:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Corvus comment
         id: comment
         uses: nwxrichardson/ci-corvus@main
