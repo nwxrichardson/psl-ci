@@ -12,6 +12,6 @@ jobs:
         uses: actions/checkout@v4
       - name: Corvus comment
         id: comment
-        uses: nwxrichardson/ci-corvus@main
+        uses: epsilonlabs/sirius-pr-action@main
         
         
